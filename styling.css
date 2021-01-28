@@ -103,6 +103,44 @@ a{
 
 
 }
+
+.wf{/*winter fashion title*/
+    font-family: "Sofia", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    margin-top:111px;
+    color: #FE412E;
+
+}
+.wfwt{/*winter fashion text*/
+    /* font-family: Kelson Sans; */
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 90px;
+    letter-spacing: -0.01em;
+    margin-top:12px;
+    color: #2A2A2A;
+
+}
+.wfwtp{
+    margin-top:24px;
+    font-family: Eina03-Regular;
+    font-size: 16px;
+    line-height: 34px;
+    color: rgba(42, 42, 42, 0.6);
+
+}
+.logos{/*css for icons*/
+    margin-right:135px;
+    align-items:center;
+
+}
+/***************************2nd section*************************************************/
 .fashion{/***FASHION */
     margin-top:128px;
     margin-left: 135px;
@@ -139,6 +177,7 @@ a{
     margin-bottom:60px;
 
 }
+/******************************************our products*************************************/
 .product{ /***OUR PRODUCT SECTION **/
     margin-left: 135px;
     margin-right:135px;
@@ -168,6 +207,20 @@ a{
 
 
 }
+.vpro{/*view all collection*/
+    float: right;
+    margin-top: -35px;
+    font-family: 'Signika', sans-serif;
+    text-decoration: underline;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    margin-right:30px;
+
+}
+
 .ibuttons{/** BUTTONS SECTION**/
     margin-bottom:82px;
     height: 55px;
@@ -197,6 +250,7 @@ a{
      color:white;
 
  }
+ /*********************************************images and description**************/
  .cardsec{/****CARD SECTION **/
      margin-left:181px;
      margin-right:89px;
@@ -272,6 +326,7 @@ a{
      height:21px;
      width:147px;
  }
+ /**********************************video player**************************/
  .videoplayer{/* VIDEO PLAYER*/
      margin-top:178px;
      margin-left:135px;
@@ -312,6 +367,24 @@ a{
     margin-left:53px;
 
 }
+.playbtn{/*play button*/
+    float:right;
+    margin-right:47px;
+    margin-top:46px;
+    height:130px;
+    width:130px;
+    border-radius: 100px;
+    border:1px solid #FE412E;
+}
+.ipbtn{/*play button*/
+    float:right;
+    margin-right:60px;
+    margin-top:60px;
+    border-radius: 100px;
+    border:1px solid #FE412E;
+    outline:  1px solid #FE412E ;
+}
+/*****************************carousel************************/
  .caro{ /*CAROUSEL*/
      margin-top:180px;
      border:1px solid #fffcf6;
@@ -326,157 +399,7 @@ a{
      margin-right:135px;
      border:1px solid #FFFCF6;
  } 
-
- .newsletter{ /* NEWS LETTER SECTION*/
-     height:675px;
-     border:0.1px solid;
-     background-size: cover;
-     width:100%;
-     background:url("images/image\ 50\ 1.png");
-     z-index: -1;
-     background-size:100%;
-     background-repeat: no-repeat;
- }
- .nt{ /* SUBSCRIPTION SECTION*/
-     margin-left: 423px;
-     margin-right: 423px;
-     margin-top:221px;
-     margin-bottom:215px;
-     width:594px;
-     height:239px;
- }
- .nlt{ /* SUBSCRIPTION TITLE*/
-     font-family: 'Signika', sans-serif;
-
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 55px;
-    letter-spacing: 0em;
-    text-align: center;
-    color:white;
-    width:100%;
- }
- .nltt{/*SUBSCRIPTION TEXT*/
-    font-family: Eina03-Regular;
-    font-size: 16px;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: center;
-    color:white;
-    
- }
- .inl{/* INPUT FIELD PLACEMENT*/
-     margin-top:34px;
-     display: flex; 
-     justify-content: center; 
- }
- .inl{/* INPUT FIELD */
-    width: 475px;
-    height: 74px;
-    border-radius:17px;  
-    font-family: Eina01-Regular;
-    font-size: 15px;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: center;
- }
- .sbtn{/*SUBSCRIBE BUTTON*/
-    position: absolute;
-    width: 157px;
-    height: 62px;
-    font-family: Eina01-Bold;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    text-align: center;
-    color:#FFFFFF;
-    background-color:#FE412E;
-    height: 62px;
-    width: 157px;
-    border-radius: 17px;
-    margin-left:312px;
-    margin-top:6px;
-    margin-bottom:6px;
-    margin-right:6px;
- }
- .footer{/**FOOTER*/
-     margin-left:94px;
-     margin-right:94px;
-     margin-top:97px;
-     margin-bottom:47px;
-     height:328px;
- }
- .colonetxt{/*1ST COLUMN*/
-     font-family: 'Mulish', sans-serif;
-    font-family: 'Signika', sans-serif;
-    font-size: 24px;
-    font-style: bold;
-    font-weight: 400;
-    line-height: 56px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-left:41px;
-
- }
- .coltxt{/**1st column text*/
-     margin-left:41px;
-     font-family: Eina03-Regular;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
- }
- .coltwotxt{/*2nd col txt*/
-    font-family: 'Signika', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    
- }
- .coltwo{/* 2nd column*/
-     margin-bottom:9px;
-     margin-top:20px;
- }
- .colcall{/* calling details*/
-    font-family: 'Signika', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-    text-align: left;
-    
- }
- .collastone{/*last column*/
-    font-family: 'Signika', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    
- }
- .iicons{/*icons*/
-     margin-top:20px;
-     margin-bottom:20px;
- }
- .collasttxt{
-    font-family: 'Signika', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    
- }
- 
-.imagec{/*carousel image*/
+ imagec{/*carousel image*/
     position: absolute;
     width: 278.93px;
     height: 283px;
@@ -593,42 +516,157 @@ a{
  
 
 }
-.wf{/*winter fashion title*/
-    font-family: "Sofia", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 50px;
-    letter-spacing: 0.1em;
-    margin-top:111px;
-    color: #FE412E;
+/*******************************news letter section*****************************/
+ .newsletter{ /* NEWS LETTER SECTION*/
+     height:675px;
+     border:0.1px solid;
+     background-size: cover;
+     width:100%;
+     background:url("images/image\ 50\ 1.png");
+     z-index: -1;
+     background-size:100%;
+     background-repeat: no-repeat;
+ }
+ .nt{ /* SUBSCRIPTION SECTION*/
+     margin-left: 423px;
+     margin-right: 423px;
+     margin-top:221px;
+     margin-bottom:215px;
+     width:594px;
+     height:239px;
+ }
+ .nlt{ /* SUBSCRIPTION TITLE*/
+     font-family: 'Signika', sans-serif;
 
-}
-.wfwt{/*winter fashion text*/
-    /* font-family: Kelson Sans; */
-    font-family: 'Signika', sans-serif;
+    font-size: 40px;
     font-style: normal;
-    font-weight: bold;
-    font-size: 75px;
-    line-height: 90px;
-    letter-spacing: -0.01em;
-    margin-top:12px;
-    color: #2A2A2A;
-
-}
-.wfwtp{
-    margin-top:24px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:white;
+    width:100%;
+ }
+ .nltt{/*SUBSCRIPTION TEXT*/
     font-family: Eina03-Regular;
     font-size: 16px;
-    line-height: 34px;
-    color: rgba(42, 42, 42, 0.6);
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:white;
+    
+ }
+ .inl{/* INPUT FIELD PLACEMENT*/
+     margin-top:34px;
+     display: flex; 
+     justify-content: center; 
+ }
+ .inl{/* INPUT FIELD */
+    width: 475px;
+    height: 74px;
+    border-radius:17px;  
+    font-family: Eina01-Regular;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+ }
+ .sbtn{/*SUBSCRIBE BUTTON*/
+    position: absolute;
+    width: 157px;
+    height: 62px;
+    font-family: Eina01-Bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color:#FFFFFF;
+    background-color:#FE412E;
+    height: 62px;
+    width: 157px;
+    border-radius: 17px;
+    margin-left:312px;
+    margin-top:6px;
+    margin-bottom:6px;
+    margin-right:6px;
+ }
+ /****************************************************footer*******************************************/
+ .footer{/**FOOTER*/
+     margin-left:94px;
+     margin-right:94px;
+     margin-top:97px;
+     margin-bottom:47px;
+     height:328px;
+ }
+ .colonetxt{/*1ST COLUMN*/
+     font-family: 'Mulish', sans-serif;
+    font-family: 'Signika', sans-serif;
+    font-size: 24px;
+    font-style: bold;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left:41px;
 
-}
-.logos{/*css for icons*/
-    margin-right:135px;
-    align-items:center;
-
-}
+ }
+ .coltxt{/**1st column text*/
+     margin-left:41px;
+     font-family: Eina03-Regular;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+ }
+ .coltwotxt{/*2nd col txt*/
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;   
+ }
+ .coltwo{/* 2nd column*/
+     margin-bottom:9px;
+     margin-top:20px;
+ }
+ .colcall{/* calling details*/
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    
+ }
+ .collastone{/*last column*/
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+ }
+ .iicons{/*icons*/
+     margin-top:20px;
+     margin-bottom:20px;
+ }
+ .collasttxt{
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    
+ }
+ /************************************************************************/
+/*********css for forms*************************/
 .form-container{/**login form and registration form*/
     background-color: #fff;
     width:300px;
@@ -639,7 +677,7 @@ a{
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
 }
-.form-container span{
+.form-container span{/***heading of form*/
     font-weight: bold;
     padding: 0 10px;
     color:#555;
@@ -647,16 +685,16 @@ a{
     width: 100px;
     display: inline-block;
 }
-.form-btn{
+.form-btn{ /**buttons*/
     display: inline-block;
 }
-.form-container form{
+.form-container form{ /*content*/
     max-width: 300px;
     padding: 0 20px;
      position: absolute;
     top:50px; 
 }
-form input{
+form input{/*input field*/
     width:100%;
     height: 30px;
     margin:10px 0;
@@ -665,7 +703,7 @@ form input{
 
 
 }
-.lbtn{
+.lbtn{/*login btn*/
         display:inline-block;
         background-color: #FE412E;
         width: 100%;
@@ -673,19 +711,14 @@ form input{
         border-radius: 18px;
         border:0px;
         color:#FFFCF6;
-        /* font-family: Kelson Sans; */
         font-family: 'Signika', sans-serif;
-
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: 19px;
-        letter-spacing: 0.05em;
-
-    
-    
+        letter-spacing: 0.05em;    
 }
-.rbtn{
+.rbtn{/*registration button*/
     display:inline-block;
     background-color: #FE412E;
     width:80%;
@@ -695,65 +728,35 @@ form input{
     color:#FFFCF6;
     /* font-family: Kelson Sans; */
     font-family: 'Signika', sans-serif;
-
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0.05em;
-margin-top :10px  solid maroon;
-
-
+    margin-top :10px  solid maroon;
 }
 .lbtn:focus{
+    /* hover and onclick action for login button*/
     outline:none;
 }
 .lbtn:hover{
+    /* hover and onclick action for login button*/
+
     background-color:#ce1e0e
 }
 
-.eline{
+.eline{ /*margin*/
     color:#FE412E;
 }
 .rbtn:focus{
+    /* hover and onclick action for registration button*/
     outline:none;
 }
 .rbtn:hover{
+    /* hover and onclick action for registration button*/
     background-color:#ce1e0e
 }
  a .href{
+     /*link*/
  color:#2a2a2a;
-}
-.vpro{/*view all collection*/
-    float: right;
-    margin-top: -35px;
-    font-family: 'Signika', sans-serif;
-    text-decoration: underline;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.1em;
-    margin-right:30px;
-
-}
-.playbtn{/*play button*/
-    float:right;
-    margin-right:47px;
-    margin-top:46px;
-    height:130px;
-    width:130px;
-    border-radius: 100px;
-    border:1px solid #FE412E;
-
-
-}
-.ipbtn{/*play button*/
-    float:right;
-    margin-right:60px;
-    margin-top:60px;
-    border-radius: 100px;
-    border:1px solid #FE412E;
-    outline:  1px solid #FE412E ;
-
 }
