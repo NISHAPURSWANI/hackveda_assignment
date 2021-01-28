@@ -4,15 +4,17 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="//db.onlinewebfonts.com/c/221e88a3e872fdb19cdf5d76e2c26055?family=Eina03-Regular" rel="stylesheet" type="text/css"/>
-<!----><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link href="//db.onlinewebfonts.com/c/221e88a3e872fdb19cdf5d76e2c26055?family=Eina03-Regular" rel="stylesheet"
+    type="text/css" />
+<!---->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Signika:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Signika:wght@300&display=swap"
+    rel="stylesheet">
 <!---->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -20,8 +22,8 @@
 
 
 
-<script> 
-/**script for iframe*/
+<script>
+    /**script for iframe*/
     $(document).ready(function () {
         $(bestseller).show();
         $(newarrival).hide();
@@ -67,7 +69,7 @@
     }
 </script>
 <script>
-/*script for carousel (For indicators)*/
+    /*script for carousel (For indicators)*/
     $(document).ready(function () {
         $(image1).show();
         $(image2).hide();
@@ -97,7 +99,7 @@
         counter = 1;
         $(pre).show();
         $(nex).show();
-        
+
     }
     function image31() {
         $(image1).hide();
@@ -214,7 +216,30 @@
     }
 
 </script>
-   
+<script>
+    /* script for video player*/
+    let times = 0;
+    function player() {
+        const Player = document.getElementById('Videof');
+        const PlayBtn = document.getElementById('pbtn');
+        let playY;
+        const playVideo = PlayBtn.addEventListener('click', () => {
+            if (times == 0) {
+                playY = Player.src += '?autoplay=1';
+                times = 1;
+                if (times == 1) {
+                    playY = playY.slice(0, -11);
+                    console.log(Player.src.split('?')[0]);
+                    Player.src = Player.src.split('?')[0];
+                    Player.src = playY
+                    times = 0;
+                }
+            }
+        });
+
+    }
+</script>
+
 <head>
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -227,6 +252,7 @@
 <body>
     <!------1st section-->
     <div class="maincontainer">
+        <!--------------------------------------NAV BAR----------------------------------------------->
         <div class="navbar">
             <div class="logo">
                 <img src="images/Tonter..png ">
@@ -234,7 +260,7 @@
             <nav>
                 <ul>
                     <li><a href="Home.html" style="color:#555">Home</a></li>
-                    <li><a href=""style="color:#555">Shop</a></li>
+                    <li><a href="" style="color:#555">Shop</a></li>
                     <li><a href="" style="color:#555">Products</a></li>
                     <li><a href="login.html" style="color:#555">Login/Register</a></li>
                     <li><a href="news.html" style="color:#555">News</a></li>
@@ -246,7 +272,9 @@
                 <img src="images/profile.png" style="margin-left:47px;height:19px;width:19px;">
             </div>
         </div>
+        <!---------------------------------------------DESCRIPTION SECTION------------------->
         <div class="rowone">
+            <!-------------------------------------------------TEXT SECTION---------------->
             <div class="colone">
                 <h5 class="wf">Winter Fashion</h5>
                 <h1 class="wfwt">Winter Fashion<br>With Tonter</h1>
@@ -259,6 +287,7 @@
                 <button class="btn2">LEARN MORE </button>
 
             </div>
+            <!------------------------------IMAGE SECTION----------------------------------------->
             <div class="colone">
                 <img src="images/hero 1.png">
 
@@ -307,9 +336,12 @@
         <button class="ibtn" id="sps" onclick="spsshow()">Sports</button>
 
     </div>
-<!----iframe-->
+    <!----iframe-->
+    <!--------------------------------------BEST SELLER------------------------------------------------------->
     <div class="cardsec" id="bestseller">
         <div class="row">
+            <!------------------------IMAGE 1 ------------------------------------------>
+
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -329,7 +361,7 @@
                     </section>
                 </div>
             </div>
-            <!------->
+            <!------------------------IMAGE 2 ------------------------------------------>
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -349,7 +381,7 @@
                     </section>
                 </div>
             </div>
-            <!--------->
+            <!--------------------------------------------------IMAGE 3----------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -374,7 +406,9 @@
         </div>
 
     </div>
+    <!---------------------------------------------------NEW ARRIVAL----------------------------------------------->
     <div class="cardsec" id="newarrival">
+        <!------------------------------IMAGE 1------------------------------------------->
         <div class="row">
             <div class="col-sm-4">
                 <div class="imgsec">
@@ -395,7 +429,7 @@
                     </section>
                 </div>
             </div>
-            <!------->
+            <!--------------------------------IMAGE 2----------------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -415,7 +449,7 @@
                     </section>
                 </div>
             </div>
-            <!--------->
+            <!-------------------------------------------------------IMAGE 3------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -436,12 +470,14 @@
                 </div>
             </div>
 
-            <!-------->
+            <!--------------------------------------------------------------------->
         </div>
     </div>
-
+<!----------------------------------------------SEASONS------------------------------------------->
     <div class="cardsec" id="seasons">
+
         <div class="row">
+            <!------------------------------------------IMAGE 1------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -461,7 +497,7 @@
                     </section>
                 </div>
             </div>
-            <!------->
+            <!------------------------------------IMAGE 2--------------------------------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -481,7 +517,7 @@
                     </section>
                 </div>
             </div>
-            <!--------->
+            <!--------------------------------------------IMAGE 3-------------------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -506,8 +542,10 @@
         </div>
 
     </div>
+    <!--------------------------------------------------------------WEDDING--------------------------------------------------->
     <div class="cardsec" id="wedding">
         <div class="row">
+            <!-------------------------------------------IMAGE 1------------------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -527,7 +565,7 @@
                     </section>
                 </div>
             </div>
-            <!------->
+            <!--------------------------------------------------IMAGE 2 ------------------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -547,7 +585,7 @@
                     </section>
                 </div>
             </div>
-            <!--------->
+            <!-----------------------------------IMAGE 3 ------------------------------------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -572,8 +610,10 @@
         </div>
 
     </div>
+    <!-----------------------------------------------SPORTS---------------------------------------------------------->
     <div class="cardsec" id="sports">
         <div class="row">
+            <!---------------------------------------------------IMAGE 1------------------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -593,7 +633,7 @@
                     </section>
                 </div>
             </div>
-            <!------->
+            <!-------------------------------------------------------IMAGE 2------------------------------------------------>
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -613,7 +653,7 @@
                     </section>
                 </div>
             </div>
-            <!--------->
+            <!-------------------------------------------------------------------IMAGE 3------------------------------------->
             <div class="col-sm-4">
                 <div class="imgsec">
                     <section class="imgarea">
@@ -638,23 +678,32 @@
         </div>
 
     </div>
-    <!------video [player]-->
-    <div class="videoplayer">
+    <!----------------------------------------video [player]------------------------------------------------------------>
+    <div class="videoplayer" id="videoplayer">
 
-          <iframe src="images/video.mp4" width="100%" height="667px"
-            style=" border-radius:80px; z-index: -1;">
+        <iframe src="images/video.mp4" width="100%" height="667px" style=" border-radius:80px; z-index: -1;"
+            id="Videof">
 
-        </iframe>  
-      
+        </iframe>
+        <!--------------ABOUT----------------------------------------------------------------->
+
         <section class="about">
-            <section class="atitle">About Us</section>
-            <section class="ades">Dui ut ornare lectus sit amet. Urna nunc id cursus metus<br> aliquam eleifend mi in.
+            <section class="atitle">About Us
+                <button onclick="player()" id="pbtn" class="playbtn"
+                    style="background:url('images/Ellipse\ 3.png'); height:103px;background-position:center; width:103px; background-position: center; ">
+                    <span>
+                        <img src="images/Vector 2.png"></span>
+                </button>
+
+            </section>
+            <section class=" ades">Dui ut ornare lectus sit amet. Urna nunc id cursus metus<br> aliquam eleifend mi in.
+
             </section>
 
         </section>
-
+<!---------------------------------------------------------------------------------------------->
     </div>
-    <!-----carousel-->
+    <!-----CAROUSEL-------------------------------------------------------------------->
     <div class="caro">
         <div class="icaro">
             <div class="sclient">
@@ -663,7 +712,7 @@
             <p class="smclient">Dui ut ornare lectus sit amet. Urna nunc id cursus metus<br>
                 aliquam eleifend mi in.</p>
 
-
+<!-------------------------------------IMAGE 1---------------------------------------------->
             <div id="image1">
                 <image src="images/grrroup.png" class="imagec">
 
@@ -673,13 +722,15 @@
                     Congue nisi vitae suscipit tellus mauris Fames<br>
                     ac turpis egestas sed tempus urna et.”
                 </p>
-                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img src="images/Group 23.png"></span></p>
+                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img
+                            src="images/Group 23.png"></span></p>
                 <p class="desauth">Sunior Designer of Lomosity</p>
 
 
 
 
             </div>
+            <!-------------------------------------------IMAGE 2----------------------------------------------------->
             <div id="image2">
                 <image src="images/grrroup1.png" class="imagec"></image>
                 <p class="descri"> “Tortor vitae purus faucibus ornare suspendisse. <br>
@@ -687,11 +738,14 @@
                     Congue nisi vitae suscipit tellus mauris Fames<br>
                     ac turpis egestas sed tempus urna et.”
                 </p>
-                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img src="images/Group 23.png"></span></p>
+                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img
+                            src="images/Group 23.png"></span></p>
                 <p class="desauth">Sunior Designer of Lomosity</p>
 
 
             </div>
+            <!-------------------------------------------IMAGE 3----------------------------------------------------->
+
             <div id="image3">
                 <image src="images/grrroup2.png" class="imagec"></image>
                 <p class="descri"> “Tortor vitae purus faucibus ornare suspendisse. <br>
@@ -699,11 +753,14 @@
                     Congue nisi vitae suscipit tellus mauris Fames<br>
                     ac turpis egestas sed tempus urna et.”
                 </p>
-                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img src="images/Group 23.png"></span></p>
+                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img
+                            src="images/Group 23.png"></span></p>
                 <p class="desauth">Sunior Designer of Lomosity</p>
 
 
             </div>
+            <!-------------------------------------------IMAGE 4----------------------------------------------------->
+
             <div id="image4">
                 <image src="images/grrroup3.png" class="imagec"></image>
                 <p class="descri"> “Tortor vitae purus faucibus ornare suspendisse. <br>
@@ -711,11 +768,13 @@
                     Congue nisi vitae suscipit tellus mauris Fames<br>
                     ac turpis egestas sed tempus urna et.”
                 </p>
-                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img src="images/Group 23.png"></span></p>
+                <p class="authdes"> John Doe <span style="margin-left:176px; margin-top:10px;"><img
+                            src="images/Group 23.png"></span></p>
                 <p class="desauth">Sunior Designer of Lomosity</p>
 
 
             </div>
+            <!-----------------------------------------------CAROUSEL BUTTONS------------------------------------------------------->
             <button onclick="image11()" id="i1" class="cbtn" style="margin-left:84px;"></button>
             <button onclick="image21()" id="i2" class="cbtn"></button>
             <button onclick="image31()" id="i3" class="cbtn"></button>
@@ -747,6 +806,7 @@
     <!----footer-->
     <div class="footer">
         <div class="row">
+            <!----------------------------------------------SECTION 1--------------------------------------------------->
             <div class="col-sm-4">
                 <section class="colonetxt">
                     Tonter.
@@ -755,6 +815,8 @@
                     Dui ut ornare lectus sit amet. Urna nunc<br> id cursus metus
                 </section>
             </div>
+            <!----------------------------------------------SECTION 2--------------------------------------------------->
+
             <div class="col-sm-4">
                 <secton class="coltwotxt">
                     Quick Contact
@@ -769,6 +831,8 @@
                     <span>+093 7585 3854</span>
                 </section>
             </div>
+            <!----------------------------------------------SECTION 3--------------------------------------------------->
+
             <div class="col-sm-4">
                 <section class="collastone">
                     Follow us
